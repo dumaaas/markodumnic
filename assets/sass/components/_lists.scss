@@ -1,0 +1,53 @@
+.sidebar-content {
+    width: 300px;
+    &__wrapper {
+        height: 100%;
+    }
+    
+    &__items {
+        padding: 0;
+        overflow: auto;
+        height: 94%;
+        a {
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: 600;
+          color: #58a6ff;
+        }
+    }
+    &__title {
+        padding: 20px 8px 10px 8px;
+        h2 {
+          font-size: 11px;
+          line-height: 11px;
+          font-weight: 700;
+          color: rgba(103, 136, 158, 0.5);
+          text-transform: uppercase;
+        }
+    }
+}
+
+.content-line {
+  display: flex;
+  padding: 3px 0;
+  gap: 10px;
+  &__number {
+    width: 15px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: "Fira Code", sans-serif;
+    font-size: 13px;
+    margin-right: 10px;
+    cursor: default;
+    user-select: none;
+
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Fira Code", sans-serif;
+    line-height: 14px;
+    text-align: center;
+  }
+}
