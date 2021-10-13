@@ -50,7 +50,6 @@ export default {
 
   &-main {
     padding-top: 20px;
-    padding-left: 20px;
     overflow: auto;
   }
 }

@@ -64,6 +64,8 @@ export default {}
 
 <style lang="scss" scoped>
 .about {
+  padding-left: 20px;
+
   img {
     width: 120px;
     height: 120px;
@@ -87,8 +89,8 @@ export default {}
   }
 
   h4 {
-      font-family: monospace;
-      color: #8b949e;
+    font-family: monospace;
+    color: #8b949e;
   }
 
   p {

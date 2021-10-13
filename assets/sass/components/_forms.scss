@@ -1,13 +1,10 @@
 #input-decortaion {
   background-color: transparent;
-  border: 1px solid $tertiary;
-  border-radius: 20px;
-  height: 38px;
-  width: 220px;
-  margin: 20px 20px 20px 0;
-  color: $tertiary;
+  border-color: transparent;
+  color: #f5d67b;
   padding-left: 10px;
-  font-size: 0.9rem;
+  font-family: monospace;
+  font-size: 14px;
 }
 
 input[type='email'],
