@@ -1,6 +1,6 @@
 export const state = () => ({
   tabs: [{
-      name: 'contact.css',
+      name: 'about.md',
       isOpened: true,
       isMain: true,
     }

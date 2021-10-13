@@ -44,6 +44,7 @@ export default {
   },
   methods: {
     submit() {
+      this.success = '';
       if (this.name === '' || this.email === '' || this.message === '') {
         this.error = 'All fields are required.'
         return
