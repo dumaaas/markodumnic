@@ -63,7 +63,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'modules/twitter'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
