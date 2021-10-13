@@ -163,7 +163,7 @@ export default {
   &-code {
     height: 360px;
     padding-left: 20px;
-    overflow-y: scroll;
+    padding-bottom: 20px;
     a {
       color: #ea8151;
       text-decoration: underline;

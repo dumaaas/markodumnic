@@ -15,21 +15,20 @@
     <div class="content-line">
       <span class="content-line__number"> 3 </span>
       <div class="content-line__text">
-        <p>Hello,👋🏽 I’m Marko, a front-end engineer with over four years</p>
+        <p>Hello,👋🏽 I’m Marko, a junior front-end engineer with lorem ipsum lorem</p>
       </div>
     </div>
     <div class="content-line">
       <span class="content-line__number"> 4 </span>
       <div class="content-line__text">
-        <p>of crafting delightful experiences and products on the web.</p>
+        <p>lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem.</p>
       </div>
     </div>
     <div class="content-line">
       <span class="content-line__number"> 5 </span>
       <div class="content-line__text">
         <p>
-          My expertise includes JavaScript, TypeScript, React, and Node.js to
-          name a few.
+          Lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem.
         </p>
       </div>
     </div>
@@ -37,7 +36,7 @@
       <span class="content-line__number"> 6 </span>
       <div class="content-line__text">
         <p>
-          I’m passionate about building high-quality software and automation.
+          lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem lorem ipsum lorem.
         </p>
       </div>
     </div>
