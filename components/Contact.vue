@@ -142,7 +142,7 @@
         </div>
         <div class="contact-form__main">
           <ContactForm v-if="isContact" />
-          <Problem v-if="isProblem" />
+          <Problem v-if="isProblem"  @openContact="changeTab('contact')"/>
         </div>
       </div>
     </div>
