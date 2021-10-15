@@ -133,15 +133,16 @@
     <div class="contact-form">
       <div class="contact-form__wrapper">
         <div class="contact-form__header">
-          <div>
+          <div :class="{ active: isProblem }" @click="changeTab('problem')">
             <p>Problems</p>
           </div>
-          <div class="active">
+          <div :class="{ active: isContact }" @click="changeTab('contact')">
             <p>Contact</p>
           </div>
         </div>
         <div class="contact-form__main">
-          <ContactForm />
+          <ContactForm v-if="isContact" />
+          <Problem v-if="isProblem" />
         </div>
       </div>
     </div>
@@ -150,10 +151,35 @@
 
 <script>
 import ContactForm from '@/components/ContactForm.vue'
+import Problem from '@/components/Problem.vue'
 
 export default {
   components: {
     ContactForm,
+    Problem,
+  },
+  data() {
+    return {
+      isContact: true,
+      isProblem: false,
+    }
+  },
+  methods: {
+    changeTab(tab) {
+      this.isContact = false
+      this.isProblem = false
+      switch (tab) {
+        case 'problem':
+          this.isProblem = true
+          break
+        case 'contact':
+          this.isContact = true
+          break
+        default:
+          this.isContact = true
+          break
+      }
+    },
   },
 }
 </script>

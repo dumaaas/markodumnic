@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="header-item"
-    :class="{ active: content.isMain }"
-  >
+  <div class="header-item" :class="{ active: content.isMain }">
     <div class="header-item__left" @click="setContentActive(content)">
       <div class="header-item__icon">
         <svg
@@ -24,9 +21,12 @@
         </svg>
       </div>
       <div class="header-item__title">
-        <p>
-          {{ content.name }}
-        </p>
+        <div>
+          <p>{{ tabSplit(content.name, 0) }}</p>
+        </div>
+        <div>
+          <p class="modifed">{{ tabSplit(content.name, 1) }}</p>
+        </div>
       </div>
     </div>
     <div @click="closeTab(content)" class="header-item__remove">x</div>
@@ -43,8 +43,12 @@ export default {
   methods: {
     ...mapMutations({
       closeTab: 'closeTab',
-      setContentActive: 'setContentActive'
+      setContentActive: 'setContentActive',
     }),
+    tabSplit(tab, i) {
+      const tabSplit = tab.split(' ')
+      return tabSplit[i]
+    },
     openMainContent(content) {
       this.$emit('openMainContent', content)
     },
@@ -62,10 +66,25 @@ export default {
   align-items: center;
   padding-left: 15px;
 
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+
+    p {
+      &.modifed {
+        color: #f5d67b;
+        font-size: 14px;
+        margin-top: -4px;
+      }
+    }
+  }
+
   &__left {
     display: flex;
-      align-items: center;
-
+    align-items: center;
   }
 
   &__remove {
