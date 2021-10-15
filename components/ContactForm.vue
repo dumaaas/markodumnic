@@ -2,16 +2,20 @@
   <div class="form">
     <form ref="form" @keyup="clearErrors" @submit.prevent>
       <div class="form-row">
+        <p>markodumnic:\portfolio\welcome></p>
+        <span>Greetings! You can contact me here if you want.</span>
+      </div>
+      <div class="form-row">
         <p>markodumnic:\portfolio\name></p>
-        <input type="text" autofocus v-model="name" name="from_name" />
+        <input type="text" autofocus v-model="name" name="from_name" autocomplete="false" />
       </div>
       <div class="form-row">
         <p>markodumnic:\portfolio\email></p>
-        <input type="text" autofocus v-model="email" name="from_email" />
+        <input type="text" autofocus v-model="email" name="from_email" autocomplete="false" />
       </div>
       <div class="form-row">
         <p>markodumnic:\portfolio\message></p>
-        <input type="text" autofocus v-model="message" name="from_message" />
+        <input type="text" autofocus v-model="message" name="from_message" autocomplete="false" />
       </div>
       <div class="form-row">
         <p>markodumnic:\portfolio\submit></p>
@@ -23,8 +27,10 @@
         </p>
       </div>
       <div v-if="success" class="form-row">
-      <p>markodumnic:\portfolio\response> <i class="success">{{ success }}</i></p>
-    </div>
+        <p>
+          markodumnic:\portfolio\response> <i class="success">{{ success }}</i>
+        </p>
+      </div>
     </form>
   </div>
 </template>
@@ -44,7 +50,7 @@ export default {
   },
   methods: {
     submit() {
-      this.success = '';
+      this.success = ''
       if (this.name === '' || this.email === '' || this.message === '') {
         this.error = 'All fields are required.'
         return
@@ -93,6 +99,13 @@ export default {
           color: rgb(90, 192, 90);
         }
       }
+    }
+    span {
+      padding-left: 10px;
+      font-size: 14px;
+      font-family: monospace;
+      line-height: 14px;
+      color: #f5d67b;
     }
     button {
       background: transparent;

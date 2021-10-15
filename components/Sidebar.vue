@@ -19,7 +19,11 @@
           />
         </svg>
       </div>
-      <div class="sidebar-nav__icon" @click="openContent('github')">
+      <div
+        class="sidebar-nav__icon"
+        :class="{ active: isSource }"
+        @click="openContent('source')"
+      >
         <svg
           width="24"
           height="24"
@@ -32,6 +36,9 @@
             fill="white"
           />
         </svg>
+        <div class="source-changes">
+          <p>2</p>
+        </div>
       </div>
       <div class="sidebar-nav__icon" @click="openContent('github')">
         <svg
@@ -90,6 +97,7 @@
       <Github v-if="isGithub" class="sidebar-content__wrapper" />
       <!-- Explorer content -->
       <Explorer v-if="isExplorer" class="sidebar-content__wrapper" />
+      <SourceControl v-if="isSource" class="sidebar-content__wrapper" />
     </div>
   </div>
 </template>
@@ -97,6 +105,7 @@
 <script>
 import Github from '@/components/Github.vue'
 import Explorer from '@/components/Explorer.vue'
+import SourceControl from '@/components/SourceControl.vue'
 
 export default {
   props: {
@@ -105,23 +114,29 @@ export default {
   components: {
     Github,
     Explorer,
+    SourceControl,
   },
   data() {
     return {
       isExplorer: false,
       isGithub: true,
+      isSource: false,
     }
   },
   methods: {
     openContent(content) {
       this.isGithub = false
       this.isExplorer = false
+      this.isSource = false
       switch (content) {
         case 'github':
           this.isGithub = true
           break
         case 'explorer':
           this.isExplorer = true
+          break
+        case 'source':
+          this.isSource = true
           break
         default:
           this.isGithub = true
@@ -147,7 +162,25 @@ export default {
     flex-direction: column;
     background: #222b33;
     &__icon {
+      position: relative;
       padding: 10px 20px;
+      .source-changes {
+        cursor: pointer;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 26px;
+        right: 16px;
+        border-radius: 50%;
+        background: darken(#58a6ff, 13%); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          color: #fff;
+          font-size: 11px;
+        }
+      }
       svg {
         opacity: 0.6;
         height: 34px;

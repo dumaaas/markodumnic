@@ -5,15 +5,10 @@
         <ContentTitle
           :content="tab"
           v-if="tab.isOpened"
-          @openMainContent="openMainContent"
         />
       </div>
     </div>
-    <div class="content-main">
-      <div v-for="tab in tabs" :key="tab.name">
-        <ContentMain :content="tab" />
-      </div>
-    </div>
+    <ContentMain :content="mainTab[0]" />
   </div>
 </template>
 
@@ -23,11 +18,16 @@ import ContentMain from '@/components/ContentMain.vue'
 
 export default {
   props: {
-    tabs: Array
+    tabs: Array,
   },
   components: {
     ContentTitle,
     ContentMain,
+  },
+  computed: {
+    mainTab() {
+      return this.tabs.filter(x => x.isMain === true)
+    }
   },
 }
 </script>
@@ -37,8 +37,9 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column; 
+  gap: 20px;
+  overflow: auto;
   &-header {
     width: 100%;
     display: flex;
@@ -51,6 +52,7 @@ export default {
   &-main {
     padding-top: 20px;
     overflow: auto;
+    height: 100%;
   }
 }
 </style>
