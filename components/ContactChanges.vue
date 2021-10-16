@@ -20,7 +20,7 @@
             <p class="comment">* CONTACT</p>
           </div>
         </div>
-        <div class="content-line">
+        <div class="content-line old">
           <span class="content-line__number"> 4 </span>
           <div class="content-line__text">
             <p class="comment">

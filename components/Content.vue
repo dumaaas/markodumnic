@@ -2,10 +2,7 @@
   <div class="content">
     <div class="content-header">
       <div class="content-header__item" v-for="tab in tabs" :key="tab.name">
-        <ContentTitle
-          :content="tab"
-          v-if="tab.isOpened"
-        />
+        <ContentTitle :content="tab" v-if="tab.isOpened" />
       </div>
     </div>
     <ContentMain :content="mainTab[0]" />
@@ -26,8 +23,8 @@ export default {
   },
   computed: {
     mainTab() {
-      return this.tabs.filter(x => x.isMain === true)
-    }
+      return this.tabs.filter((x) => x.isMain === true)
+    },
   },
 }
 </script>
@@ -37,10 +34,11 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 20px;
   overflow: auto;
   &-header {
+
     width: 100%;
     display: flex;
     &__item {

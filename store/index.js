@@ -1,10 +1,10 @@
 export const state = () => ({
   tabs: [{
-      name: 'about.md',
-      isOpened: true,
-      isMain: true,
-    }
-  ],
+    name: 'about.md',
+    isOpened: true,
+    isMain: true,
+    icon: 'md.svg'
+  }],
   activeTab: 'about.md'
 })
 
@@ -12,7 +12,25 @@ export const state = () => ({
 export const mutations = {
   addTab: (state, payload) => {
     const findTab = state.tabs.find(x => x.name === payload);
+    let findIcon = '';
 
+    switch (payload) {
+      case 'projects.html M':
+      case 'projects.html':
+        findIcon = 'html.svg';
+        break;
+      case 'contact.css':
+      case 'contact.css M':
+        findIcon = 'css.svg';
+        break;
+      case 'resume.pdf M':
+      case 'resume.pdf':
+        findIcon = 'pdf.svg';
+        break;
+      default:
+        findIcon = 'md.svg';
+        break;
+    }
     state.tabs.forEach(tab => {
       tab.isMain = false;
     });
@@ -26,6 +44,7 @@ export const mutations = {
         name: payload,
         isMain: true,
         isOpened: true,
+        icon: findIcon
       }
       state.activeTab = payload;
       state.tabs.push(newTab);
