@@ -21,9 +21,9 @@
         content.name === 'contact.css M' && content.isOpened && content.isMain
       "
     />
-    <AboutChanges
+    <ProjectChanges
       v-if="
-        content.name === 'about.md M' && content.isOpened && content.isMain
+        content.name === 'projects.html M' && content.isOpened && content.isMain
       "
     />
   </div>
@@ -35,6 +35,7 @@ import Resume from '@/components/Resume.vue'
 import Contact from '@/components/Contact.vue'
 import Projects from '@/components/Projects.vue'
 import ContactChanges from '@/components/ContactChanges.vue'
+import ProjectChanges from '@/components/ProjectChanges.vue'
 
 export default {
   components: {
@@ -43,6 +44,7 @@ export default {
     Contact,
     Projects,
     ContactChanges,
+    ProjectChanges
   },
   props: {
     content: Object,

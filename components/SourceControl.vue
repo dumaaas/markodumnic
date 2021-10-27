@@ -90,10 +90,8 @@ export default {
     return {
       explorerOpened: false,
       tabs: [
-        { name: 'about.md M', icon: 'md.svg' },
         { name: 'projects.html M', icon: 'html.svg' },
         { name: 'contact.css M', icon: 'css.svg' },
-        { name: 'resume.pdf M', icon: 'pdf.svg' },
       ],
     }
   },
