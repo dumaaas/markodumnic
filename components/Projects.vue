@@ -318,7 +318,7 @@
       <div class="content-line__text"></div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 36 </span>
+      <span class="content-line__number"> 41 </span>
       <div class="content-line__text">
         <p>
           👨‍💻
@@ -329,19 +329,19 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 37 </span>
+      <span class="content-line__number"> 42 </span>
       <div class="content-line__text">
         <p>Goal: Designing and Coding my personal porfolio site.</p>
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 38 </span>
+      <span class="content-line__number"> 43 </span>
       <div class="content-line__text">
         <p>Challenges: Design, Responsiveness, UI Interface.</p>
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 39 </span>
+      <span class="content-line__number"> 44 </span>
       <div class="content-line__text">
         <p>
           <span class="language vue">Nuxt</span>
@@ -351,11 +351,11 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 40 </span>
+      <span class="content-line__number"> 45 </span>
       <div class="content-line__text"></div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 36 </span>
+      <span class="content-line__number"> 46 </span>
       <div class="content-line__text">
         <p>
           👨‍💻
@@ -366,19 +366,19 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 37 </span>
+      <span class="content-line__number"> 47 </span>
       <div class="content-line__text">
         <p>Goal: Using React to design and implement a quiz.</p>
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 38 </span>
+      <span class="content-line__number"> 48 </span>
       <div class="content-line__text">
         <p>Challenges: Learning React, Game, Design, UI Interface</p>
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 39 </span>
+      <span class="content-line__number"> 49 </span>
       <div class="content-line__text">
         <p>
           <span class="language js">React</span>
@@ -388,11 +388,11 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 40 </span>
+      <span class="content-line__number"> 50 </span>
       <div class="content-line__text"></div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 36 </span>
+      <span class="content-line__number"> 51 </span>
       <div class="content-line__text">
         <p>
           👨‍💻
@@ -405,7 +405,7 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 37 </span>
+      <span class="content-line__number"> 52 </span>
       <div class="content-line__text">
         <p>
           Goal: For my thesis, I created a full-stack development movie-review
@@ -414,13 +414,13 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 38 </span>
+      <span class="content-line__number"> 53 </span>
       <div class="content-line__text">
         <p>Challenges: Graduate, Full Stack Application Development, Design</p>
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 39 </span>
+      <span class="content-line__number"> 54 </span>
       <div class="content-line__text">
         <p>
           <span class="language vue">Vue</span>
@@ -432,11 +432,11 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 40 </span>
+      <span class="content-line__number"> 55 </span>
       <div class="content-line__text"></div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 41 </span>
+      <span class="content-line__number"> 56 </span>
       <div class="content-line__text">
           <p>
               For more projects, visit my <a href="https://github.com/dumaaas" target="_blank">Github page.</a>
@@ -444,7 +444,7 @@
       </div>
     </div>
     <div class="content-line">
-      <span class="content-line__number"> 42 </span>
+      <span class="content-line__number"> 57 </span>
       <div class="content-line__text"></div>
     </div>
   </div>
